@@ -1,0 +1,47 @@
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    sidebar-mode: false;
+}
+
+* {
+    bg: rgba(0, 0, 0, 0.55);
+    bg-alt: rgba(10, 10, 10, 0.75);
+    card: rgba(20, 20, 20, 0.85);
+    fg: #cbd5e1;
+    selected: rgba(96, 165, 250, 0.9);
+    selected-fg: #0b0f14;
+}
+
+window {
+    background-color: @bg;
+    border: 1px;
+    border-color: rgba(255,255,255,0.08);
+    border-radius: 14px;
+    width: 650px;
+    padding: 12px;
+}
+
+inputbar {
+    background-color: @bg-alt;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+listview {
+    background-color: transparent;
+    spacing: 6px;
+    padding: 8px;
+}
+
+element {
+    background-color: @card;
+    padding: 10px;
+    border-radius: 10px;
+    text-color: @fg;
+}
+
+element selected {
+    background-color: @selected;
+    text-color: @selected-fg;
+}

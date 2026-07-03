@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,15 +100,19 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-alias brave='(/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=brave --file-forwarding com.brave.Browser @@u %U @@ &> /dev/null)'
 alias vo='alsamixer'
 alias zcon='nano ~/.zshrc'
 alias re='source ~/.zshrc'
-alias yt='flatpak run com.brave.Browser https://youtube.com 2>/dev/null'
 alias dcu='docker compose up -d'
 alias acon='nano ~/.config/alacritty/alacritty.toml'
-
-fastfetch
+alias warp='curl https://www.cloudflare.com/cdn-cgi/trace'
+alias zen='~/Documents/Apps/zen/zen </dev/null & disown'
+alias icon='nano ~/.config/i3/config'
+alias ll='ls -la'
+alias rcon='nano ~/.config/rofi/config.rasi'
+alias sn='shutdown now'
+alias ra='ranger'
+alias pcon='nano ~/.config/picom/picom.conf'
+alias wco='warp-cli connect'
+alias wdi='warp-cli disconnect'
+alias pocon='nano ~/.config/polybar/config.ini'
